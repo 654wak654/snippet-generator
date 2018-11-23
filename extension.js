@@ -73,9 +73,7 @@ function generateSnippet() {
     vscode.window.showInformationMessage("Done!");
 }
 
-function activate(context) {
+exports.activate = (context) => {
     let generateSnippetCommand = vscode.commands.registerCommand("extension.generateSnippet", generateSnippet);
     context.subscriptions.push(generateSnippetCommand);
-}
-
-exports.activate = activate;
+};
