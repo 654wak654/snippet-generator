@@ -62,7 +62,7 @@ function generateSnippet() {
     // TODO: Push to git instead of generating a file on disk
     fs.writeFile(
         uri.fsPath.replace(path.extname(uri.fsPath), ".html"),
-        mustache.render(readFile(path.join(__dirname, "template", "template.html")), {
+        mustache.render(readFile(path.join(__dirname, "template.html")), {
             title: path.basename(uri.fsPath),
             style: style,
             content: md.render("```" + document.languageId + "\n" + document.getText() + "```")
