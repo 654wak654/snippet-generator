@@ -20,4 +20,4 @@ There is currently no error checking (or error reporting) other than some basic 
 
 ## Release Notes
 
-Please see [the changelog](changelog).
+Please see [the changelog](https://github.com/654wak654/snippet-generator/blob/master/CHANGELOG.md).
